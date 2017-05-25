@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "build": "gitbook build",
+    "build:pdf": "gitbook pdf ./ ./dist/UTTT.pdf",
+    "build:ebook": "gitbook epub ./ ./dist/UTTT.epub && gitbook mobi ./ ./dist/UTTT.mobi"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-load-plugins": "^1.5.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "plugins": [
+    "image-captions",
+    "image-wrapper"
+  ],
+  "description": "This book explains the Ultimate Tic Tac Toe game, and the process of writing an algorithm to compete at it.",
+  "author": "Socialgorithm",
+  "language": "en"
+}
