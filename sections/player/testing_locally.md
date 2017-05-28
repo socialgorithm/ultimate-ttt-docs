@@ -28,16 +28,16 @@ The uabc client will send you one of the following:
 
 |Command|Expects response|Description|
 |-------|----------------|-----------|
-|`init`|No|The server is telling you to start the game - choose any board and move that you want|
-|`waiting`|No|The server is telling you that the other player is not ready yet.|
-|`move`|Yes|Move request, since you can answer directly to an opponent move, this is usually not necessary|
-|`opponent x,y;x,y`|Yes|Sent after an opponent move, it contains their move data in the form `board.x, board.y; move.x, move.y`. After receiving this you can directly answer with your move|
+|`init`|No|The server is telling you that a new game is starting, clear your state and await further commands|
+|`waiting`|No|The server is telling you that the other player is not ready yet|
+|`move`|Yes|Move request, since you can answer directly to an opponent move, this is usually only necessary once at the beginning of the game|
+|`opponent row,col;row,col`|Yes|Sent after an opponent move, it contains their move data in the form `main_board.row, main_board.col; sub_board.row, sub_board.col`. After receiving this you can directly answer with your move|
 
 ## Responding
 The only possible response at any given time is a move. If you answer out of place you will lose the game.
 
 ### Response format
-`x,y;x,y` - Where the first coordinates are the board, and the second are the move (`board.x, board.y; move.x, move.y`)
+`row,col;row,col` - Where the first coordinates point to a sub_board/game of the main board, and the second are the cell co-ordinates of the sub board (`main_board.row, main_board.col; sub_board.row, sub_board.col`)
 
 # Example
 
