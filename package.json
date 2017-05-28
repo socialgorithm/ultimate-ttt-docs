@@ -2,7 +2,9 @@
   "scripts": {
     "build": "gitbook build",
     "build:pdf": "gitbook pdf ./ ./dist/UTTT.pdf",
-    "build:ebook": "gitbook epub ./ ./dist/UTTT.epub && gitbook mobi ./ ./dist/UTTT.mobi"
+    "build:ebook": "gitbook epub ./ ./dist/UTTT.epub && gitbook mobi ./ ./dist/UTTT.mobi",
+    "publish": "gulp publish",
+    "deploy": "npm run build && npm run deploy"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
