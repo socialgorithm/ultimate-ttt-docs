@@ -61,6 +61,7 @@ The following is a sample game from the point of view of player 1 (the input/out
 ## Installing the Client
 
 > You'll need to have [Nodejs and NPM installed](https://nodejs.org/en/download/) in your computer.
+> Make sure you have Nodejs version > 6 running (you can check with `node -v`), otherwise upgrade now. This will fix an issue when using the `--log` option on the client.
 
 Install the executable:
 
@@ -86,6 +87,10 @@ $ uabc -p --log --verbose -f "node path/to/player.js"
 * `--verbose` enables logging to the console
 * `-f` defines the path to your executable player (for scripting languages like JavaScript or Python you may have to add `node` and `python` to the path, as seen in the example)
 
-Logging to a file is very useful because you can then [upload your log file](https://uttt.socialgorithm.org/replay) to see the games and analyze the moves one by one.
-
 For an explanation of all the options run `uabc -h`.
+
+### Pro Tip!
+
+Logging to a **file** is very useful because you can then *[upload your log file](https://uttt.socialgorithm.org/replay)* to see the games and analyze the moves one by one.
+
+Seriously, this is going to be *very* useful, **try it**!
