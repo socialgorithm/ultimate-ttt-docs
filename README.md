@@ -9,3 +9,20 @@ You can start with the [game rules](sections/uttt/ultimate_tic_tac_toe.md), or -
 The platform to compete in, sample players, implementations... are all Open Source and available in our GitHub organization: https://github.com/socialgorithm
 
 *Good Luck!*
+
+## Preparing your Laptop
+
+These are the minimum requirements to participate in the coding competition:
+
+1. Have a **code editor**. The choice here is basically infinite, so I'll list the most popular and you can choose any.
+    * [Visual Studio Code](https://code.visualstudio.com/) _(recommended)_
+    * [Sublime Text](https://www.sublimetext.com/3)
+    * [Atom](https://atom.io/)
+
+1. Install [NodeJS v7](https://nodejs.org/en/download/current/)
+1. Install the competition client:
+    ```bash
+    npm install -g @socialgorithm/uabc
+    ```
+    
+And now [continue](sections/uttt/ultimate_tic_tac_toe.md) reading the docs :)
