@@ -18,6 +18,8 @@ These are the minimum requirements to participate in the coding competition:
     * [Visual Studio Code](https://code.visualstudio.com/) _(recommended)_
     * [Sublime Text](https://www.sublimetext.com/3)
     * [Atom](https://atom.io/)
+    
+    > Subjective, I know, and you might be screaming "emacs/vim are SO much better". We know them, and use them (vim personally), but this is targeting people _without_ a code editor in their machine already.
 
 1. Install [NodeJS v7](https://nodejs.org/en/download/current/)
 1. Install the competition client:
