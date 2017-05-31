@@ -27,4 +27,10 @@ These are the minimum requirements to participate in the coding competition:
     npm install -g @socialgorithm/uabc
     ```
     
+    On some computers it might complain that it needs extra permissions (Mac & Linux, depending on your conf) so try:
+    
+    ```bash
+    sudo npm install -g @socialgorithm/uabc
+    ```
+    
 And now [continue](sections/uttt/ultimate_tic_tac_toe.md) reading the docs :)
