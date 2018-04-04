@@ -80,7 +80,9 @@ It's interesting to look at each of these to see how they implement the logic an
 
 ## Python Starter Project
 
-> You'll need to have python3 installed. See https://www.python.org/downloads/ for instructions, and download the latest version (3.6).
+After you've cloned the repository (Initial Implementations section above), you need to ensure you have Python3 installed, run `python3 -v` and ensure it prints 3.6.
+
+> If you don't have Python3 installed, see https://www.python.org/downloads/ for instructions, and download the latest version (3.6).
 
 Once that's done, you need to install the `ultimate_ttt` package on which this player depends:
 
