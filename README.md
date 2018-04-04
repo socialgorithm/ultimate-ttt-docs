@@ -2,7 +2,7 @@
 
 Welcome to the documentation for the competition!
 
-This "book" explains the **Ultimate Tic Tac Toe** game, and the process of writing an algorithm to compete at it.
+This "book" explains the **Ultimate Tic Tac Toe** game, and the process of writing an algorithm to compete at it. It is also available as a [PDF document](https://github.com/socialgorithm/ultimate-ttt-docs/blob/master/dist/UTTT.pdf), or an ebook in [mobi](https://github.com/socialgorithm/ultimate-ttt-docs/blob/master/dist/UTTT.mobi) & [epub](https://github.com/socialgorithm/ultimate-ttt-docs/blob/master/dist/UTTT.epub) formats.
 
 You can start with the [game rules](sections/uttt/ultimate_tic_tac_toe.md), or - if you already know them - with [how to write a player](sections/player/writing_player.md).
 

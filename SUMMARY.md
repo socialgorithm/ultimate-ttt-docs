@@ -9,5 +9,6 @@
 ## Competing
 
 * [Writing a Player](sections/player/writing_player.md)
+* [Ideas](sections/player/ideas.md)
 * [Testing locally](sections/player/testing_locally.md)
 * [Competing](sections/player/competing.md)

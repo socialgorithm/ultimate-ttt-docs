@@ -33,3 +33,5 @@ Then the other player has to play on the top right board:
 The game may seem simple at first, but the fact that you get to decide where your opponent plays next means that you'll have to look ahead several turns to decide what the best move is.
 
 You should start by playing at least once on paper with a friend, to get an idea of how the game goes. Sometimes giving up one of the smaller games is necessary to win the big one!
+
+You are now ready to [start writing your own player](../player/writing_player.md)!

@@ -106,3 +106,9 @@ If you think you have a good approach, you can test your player against a random
 ```bash
 uabc -p -f -g 100 "python3 samples/random_player_wrapper.py"
 ```
+
+--------
+
+We have prepared [some ideas](ideas.md) on how to write the AI for your player that may help you out!
+
+Otherwise, let's move on and learn [how to test your player locally](testing_locally.md).

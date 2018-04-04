@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "start": "gitbook serve",
     "build": "gitbook build",
     "build:pdf": "gitbook pdf ./ ./dist/UTTT.pdf",
     "build:ebook": "gitbook epub ./ ./dist/UTTT.epub && gitbook mobi ./ ./dist/UTTT.mobi",

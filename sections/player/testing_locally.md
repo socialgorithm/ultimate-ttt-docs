@@ -94,3 +94,7 @@ For an explanation of all the options run `uabc -h`.
 Logging to a **file** is very useful because you can then *[upload your log file](https://uttt.socialgorithm.org/replay)* to see the games and analyze the moves one by one.
 
 Seriously, this is going to be *very* useful, **try it**!
+
+---------
+
+Are you beating the random player consistently? How about [competing](competing.md) against the rest of players? :) (although this will have to wait until everyone is ready)
