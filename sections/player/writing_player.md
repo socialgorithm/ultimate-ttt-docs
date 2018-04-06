@@ -104,7 +104,7 @@ python3 setup.py test
 If you think you have a good approach, you can test your player against a random one using uabc:
 
 ```bash
-uabc -p -f -g 100 "python3 samples/random_player_wrapper.py"
+uabc -p -f -g 100 "python3 random_player_wrapper.py"
 ```
 
 --------
