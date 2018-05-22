@@ -1,16 +1,14 @@
 # Ultimate TTT Algorithmic Competition
 
-Welcome to the documentation for the competition!
+We are going to be playing a game of Ultimate Tic Tac Toe (you'll learn all about it soon). This documentation will help you write an intelligent algorithm.
 
-This "book" explains the **Ultimate Tic Tac Toe** game, and the process of writing an algorithm to compete at it. It is also available as a [PDF document](https://github.com/socialgorithm/ultimate-ttt-docs/blob/master/dist/UTTT.pdf), or an ebook in [mobi](https://github.com/socialgorithm/ultimate-ttt-docs/blob/master/dist/UTTT.mobi) & [epub](https://github.com/socialgorithm/ultimate-ttt-docs/blob/master/dist/UTTT.epub) formats.
+**Please read everything carefully!**
 
-You can start with the [game rules](sections/uttt/ultimate_tic_tac_toe.md), or - if you already know them - with [how to write a player](sections/player/writing_player.md).
-
-The platform to compete in, sample players, implementations... are all Open Source and available in our GitHub organization: https://github.com/socialgorithm
+> something about socialgorithm, link to get involved
 
 *Good Luck!*
 
-## Preparing your Laptop
+## Before You Arrive
 
 These are the minimum requirements to participate in the coding competition:
 
@@ -21,16 +19,20 @@ These are the minimum requirements to participate in the coding competition:
     
     > Subjective, I know, and you might be screaming "emacs/vim are SO much better". We know them, and use them (vim personally), but this is targeting people _without_ a code editor in their machine already.
 
+1. Install [Git](https://git-scm.com/downloads)
 1. Install [NodeJS >7](https://nodejs.org/en/download/current/)
 1. Install the competition client:
     ```bash
     npm install -g @socialgorithm/uabc
     ```
-    
-    On some computers it might complain that it needs extra permissions (Mac & Linux, depending on your conf) so try:
-    
-    ```bash
-    sudo npm install -g @socialgorithm/uabc
-    ```
-    
-And now [continue](sections/uttt/ultimate_tic_tac_toe.md) reading the docs :)
+
+## Continue: [Game Rules](sections/uttt/ultimate_tic_tac_toe.md)
+
+-----
+
+## Troubleshooting
+
+#### Permission Denied / EACCES
+
+If you see an **EACCES** error when you try to install a package globally: See the [npm docs on permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions).
+

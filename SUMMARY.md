@@ -1,14 +1,18 @@
 # Summary
 
 * [Introduction](README.md)
-
-## Game & Rules
-
-* [Ultimate Tic Tac Toe](sections/uttt/ultimate_tic_tac_toe.md)
-
-## Competing
-
+* [Game Rules](sections/uttt/ultimate_tic_tac_toe.md)
 * [Writing a Player](sections/player/writing_player.md)
+    * [Python](sections/player/python.md)
+    * [JavaScript](sections/player/javascript.md)
+    * [Other Languages...](sections/player/other_languages.md)
+* [Testing Locally](sections/player/testing_locally.md)
 * [Ideas](sections/player/ideas.md)
-* [Testing locally](sections/player/testing_locally.md)
-* [Competing](sections/player/competing.md)
+* [Competition](sections/player/competing.md)
+
+--------
+
+## About us
+
+* [#Socialgorithm](https://socialgorithm.org)
+* [Get Involved!](https://socialgorithm.org/team)
