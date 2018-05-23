@@ -4,7 +4,7 @@ So, you've written the smartest AI algorithm to play Ultimate Tic Tac Toe? Let's
 
 Each client will connect to our server, and they will play 100-1000 games against each other in a tournament style competition, where algorithms will keep advancing towards the final round.
 
-Please make sure that you have [tested your client locally](testing_locally.md) and it works. Ideally it should beat the random implementation every single time consistently.
+Please make sure that you have [tested your client locally](analyse_games.md) and it works. Ideally it should beat the random implementation every single time consistently.
 
 ## Connecting to the Server
 

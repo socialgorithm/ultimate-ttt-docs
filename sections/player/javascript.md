@@ -33,7 +33,7 @@ It's interesting to look at each of these to see how they implement the logic an
 
 > We have prepared [some ideas](ideas.md) on how to write the AI for your player that may help you out!
 
-## Continue: [Running Locally](testing_locally.md)
+## Continue: [Running Locally](analyse_games.md)
 
 --------
 

@@ -1,22 +1,10 @@
-# Testing Locally
+# Iterating Locally
 
 > If you haven't installed the client utility `uabc` please go through the ["Before You Arrive" section](../../README.md).
 
-## Playing Locally
+## UABC Options
 
-To start a local practice round, with logging to file and console, run:
-
-> **JavaScript Players:**
-
-```console
-uabc -p --log --verbose -f "node path/to/player.js"
-```
-
-> **Python Players:**
-
-```console
-uabc -p --log --verbose -f "python3 path/to/player.py"
-```
+The `uabc` utility which you use to play games comes with some handy options.
 
 * `-p` puts the client in practice mode
 * `--log` enables logging to a file
@@ -29,6 +17,8 @@ For an explanation of all the options run `uabc -h`.
 
 Logging to a **file** is very useful because you can then *[upload your log file](https://uttt.socialgorithm.org/replay)* to see the games and analyze the moves one by one.
 
+For example, you can run `uabc -p --log --verbose -f "python3 run_player.py"`, and use your logfile to see: 
+
 ![Game Analysis](/assets/replay.gif)
 
 Seriously, this is going to be *very* useful, **try it**!
@@ -36,4 +26,4 @@ Seriously, this is going to be *very* useful, **try it**!
 ## Continue:
 
 ### [Ideas for Your Player](ideas.md)
-### [Competing](competing.md)
+### [Competing with Humans](competing.md)

@@ -51,4 +51,4 @@ If you end up writing a game engine in any other language, please [get in touch]
 
 > We have prepared [some ideas](ideas.md) on how to write the AI for your player that may help you out!
 
-## Continue: [Running Locally](testing_locally.md)
+## Continue: [Running Locally](analyse_games.md)

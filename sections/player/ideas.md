@@ -52,4 +52,4 @@ Keep in mind that for the competition there is a timeout per move, so make sure 
 
 ------
 
-You should now be ready to learn [how to test your player locally](testing_locally.md)!
+You should now be ready to learn [how to test your player locally](analyse_games.md)!

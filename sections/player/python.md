@@ -7,30 +7,90 @@
 In a terminal window, navigate to the folder where you want to store this project (`cd <folder-name>`), and run:
 
 ```console
-git clone https://github.com/socialgorithm/uttt-player-py.git
+git clone https://github.com/socialgorithm/ultimate-ttt-py.git
 ```
 
-After this, you'll have a folder named `uttt-player-py`, which contains the player.
+After this, you'll have a folder named `ultimate-ttt-py`, which contains the player.
 
-## Set up
+## Run the Random player
 
-Now make sure you have Python3 installed, run `python3 -v` and ensure it prints 3.6.
+The starter project comes with a player that plays moves at random. You can ensure everything works as it
+should by running this player against the `uabc` random player (so much randomness!):
 
-> If you don't have Python3 installed, see https://www.python.org/downloads/ for instructions, and download the latest version (3.6).
+`uabc -p -f "python3 run_player.py"`
 
-Once that's done, you need to install the `ultimate_ttt` package on which this player depends:
+> You need to have Python 3.6 or higher installed, see https://www.python.org/downloads/ for instructions
 
-```bash
-$ pip3 install ultimate_ttt
+You should see output along the lines of:
+
+```console
++----------------------------------+
+|     Ultimate Algorithm Battle    |
++----------------------------------+
+Starting practice mode (1 games)
+
+Tie!
+Games played: 1
+
+Player A (player) wins: 0 (0%)
+Player B (server) wins: 0 (0%)
+Ties: 1 (100%)
+
+Player 1 timeouts: 0
+Player 2 timeouts: 0
+
+Total time: 191.71ms
+Avg game: 191.71ms
+Max game: 191.71ms
+Min game: 191.71ms
 ```
 
-We have provided the `ultimate_ttt_player/random_player.py` file to get you started.
+You are now ready to compete!
 
-The only method you need to edit to improve this player is `get_my_move` (line 25) - and any other method that this would call. You can see that the random player just picks a valid board at random, then a valid position within that board. You can obviously do better... ;)
+## Improve the Random player 
 
-> We have prepared [some ideas](ideas.md) on how to write the AI for your player that may help you out!
+The random player plays by picking moves at random. You can view the code that does this by 
+opening the `players/random.py` file. The code will be something like:
 
-## Continue: [Running Locally](testing_locally.md)
+```python
+class Random(StdOutPlayer):
+    def __init__(self):
+        super().__init__()
+
+    def get_my_move(self) -> Tuple[MainBoardCoords, SubBoardCoords]:
+        main_board_coords = self.pick_next_main_board_coords()
+        sub_board = self.main_board.get_sub_board(main_board_coords)
+        sub_board_coords = self.pick_random_sub_board_coords(sub_board)
+        return main_board_coords, sub_board_coords
+
+    def pick_next_main_board_coords(self) -> MainBoardCoords:
+        if self.main_board.sub_board_next_player_must_play is None:
+            return random.choice(self.main_board.get_playable_coords)
+        else:
+            return self.main_board.sub_board_next_player_must_play
+
+    @staticmethod
+    def pick_random_sub_board_coords(sub_board: SubBoard) -> SubBoardCoords:
+        return random.choice(sub_board.get_playable_coords())
+```
+
+As you can see, the `get_my_move` method is the one you need to edit, it returns a tuple of `MainBoardCoords` and 
+`SubBoardCoords` (which are essentially the same thing, they contain a `row` and a `column`).
+
+To keep things simple, start off with editing the `players/random.py` file.
+
+## Game Engine
+
+There is a game engine provided that keeps track of the state of the game and does a lot of the heavy lifting
+for you. This can be accessed through the `self.main_board` object, and you can consult
+the [API Reference](https://ultimate-ttt-py.readthedocs.io/en/latest/) for all the available methods 
+
+### Sources
+
+Some folks prefer to view the source of the game engine directly rather than using the API reference. You can
+find all the sources in the `engine/` directory.
+
+## Continue: [Analyse Your Games](analyse_games.md)
 
 --------
 

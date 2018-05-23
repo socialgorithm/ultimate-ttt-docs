@@ -6,7 +6,7 @@
     * [Python](sections/player/python.md)
     * [JavaScript](sections/player/javascript.md)
     * [Other Languages...](sections/player/other_languages.md)
-* [Testing Locally](sections/player/testing_locally.md)
+* [Testing Locally](sections/player/analyse_games.md)
 * [Ideas](sections/player/ideas.md)
 * [Competition](sections/player/competing.md)
 
