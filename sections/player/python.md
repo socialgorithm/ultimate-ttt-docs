@@ -17,7 +17,9 @@ After this, you'll have a folder named `ultimate-ttt-py`, which contains the pla
 The starter project comes with a player that plays moves at random. You can ensure everything works as it
 should by running this player against the `uabc` random player (so much randomness!):
 
-`uabc -p -f "python3 run_player.py"`
+`uabc -p -f "python run_player.py"`
+
+**NOTE:** Depending on how python was installed you may need to use `python3` instead of `python`.
 
 > You need to have Python 3.6 or higher installed, see https://www.python.org/downloads/ for instructions
 
