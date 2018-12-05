@@ -1,0 +1,404 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Writing a Player · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="Socialgorithm">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="python.html" />
+    
+    
+    <link rel="prev" href="../uttt/ultimate_tic_tac_toe.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../uttt/ultimate_tic_tac_toe.html">
+            
+                <a href="../uttt/ultimate_tic_tac_toe.html">
+            
+                    
+                    Game Rules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="writing_player.html">
+            
+                <a href="writing_player.html">
+            
+                    
+                    Writing a Player
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="python.html">
+            
+                <a href="python.html">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="javascript.html">
+            
+                <a href="javascript.html">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="other_languages.html">
+            
+                <a href="other_languages.html">
+            
+                    
+                    Other Languages...
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="analyse_games.html">
+            
+                <a href="analyse_games.html">
+            
+                    
+                    Testing Locally
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ideas.html">
+            
+                <a href="ideas.html">
+            
+                    
+                    Ideas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="competing.html">
+            
+                <a href="competing.html">
+            
+                    
+                    Competition
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">About us</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <a target="_blank" href="https://socialgorithm.org">
+            
+                    
+                    #Socialgorithm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <a target="_blank" href="https://socialgorithm.org/team">
+            
+                    
+                    Get Involved!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Writing a Player</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="writing-a-player">Writing a Player</h1>
+<p>We&apos;re going to write an algorithm that can play UTTT, exciting right? :)</p>
+<p>At the most basic level, a player needs to be able to calculate a <strong>valid move</strong>, and receive <strong>opponent moves</strong>. Every time it receives a move from its opponent it will run some calculations, and return what it considers to be the optimal move.</p>
+<p>A simple start would be to have a program that does just that:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// pseudo-code example of the most basic methods</span>
+addOpponentMove(board, move) {
+    <span class="hljs-comment">// store his move</span>
+}
+
+addMove(board, move) {
+    <span class="hljs-comment">// store our move</span>
+}
+
+getMove() {
+    <span class="hljs-comment">// calculate a new move</span>
+    <span class="hljs-keyword">return</span> {
+        board: ...,
+        move: ...
+    };
+}
+</code></pre>
+<p>The problem with this is that we need to store and know the <strong>game state</strong> - have a board, calculate whether a player has won, check if a move is valid...</p>
+<h2 id="getting-started">Getting Started</h2>
+<p>We provide ready to use implementations that play at random, so you only have to improve the logic that picks the moves.</p>
+<p>Pick the one for your language of choice:</p>
+<ul>
+<li><a href="python.html">Python</a></li>
+<li><a href="javascript.html">JavaScript</a></li>
+<li><a href="other_languages.html">Other languages...</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../uttt/ultimate_tic_tac_toe.html" class="navigation navigation-prev " aria-label="Previous page: Game Rules">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="python.html" class="navigation navigation-next " aria-label="Next page: Python">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Writing a Player","level":"1.3","depth":1,"next":{"title":"Python","level":"1.3.1","depth":2,"path":"sections/player/python.md","ref":"sections/player/python.md","articles":[]},"previous":{"title":"Game Rules","level":"1.2","depth":1,"path":"sections/uttt/ultimate_tic_tac_toe.md","ref":"sections/uttt/ultimate_tic_tac_toe.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","image-wrapper","-sharing"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"image-captions":{"variable_name":"_pictures"},"image-wrapper":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Socialgorithm","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"sections/uttt/ultimate_tic_tac_toe.html#fig1.2.1","level":"1.2","list_caption":"Figure: Ultimate Tic Tac Toe board, with an animation for some rounds","alt":"Ultimate Tic Tac Toe board, with an animation for some rounds","nro":1,"url":"/assets/uttt.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"Ultimate Tic Tac Toe board, with an animation for some rounds","attributes":{},"skip":false,"key":"1.2.1"},{"backlink":"sections/uttt/ultimate_tic_tac_toe.html#fig1.2.2","level":"1.2","list_caption":"Figure: Example of a first move","alt":"Example of a first move","nro":2,"url":"/assets/3-first-move.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"Example of a first move","attributes":{},"skip":false,"key":"1.2.2"},{"backlink":"sections/uttt/ultimate_tic_tac_toe.html#fig1.2.3","level":"1.2","list_caption":"Figure: Board where the next player has to play in","alt":"Board where the next player has to play in","nro":3,"url":"/assets/4-second-move.jpg","index":3,"caption_template":"Figure: _CAPTION_","label":"Board where the next player has to play in","attributes":{},"skip":false,"key":"1.2.3"},{"backlink":"sections/player/analyse_games.html#fig1.4.1","level":"1.4","list_caption":"Figure: Game Analysis","alt":"Game Analysis","nro":4,"url":"/assets/replay.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"Game Analysis","attributes":{},"skip":false,"key":"1.4.1"}]},"language":"en","gitbook":"*","description":"This book explains the Ultimate Tic Tac Toe game, and the process of writing an algorithm to compete at it."},"file":{"path":"sections/player/writing_player.md","mtime":"2018-05-22T14:53:29.509Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-12-05T11:47:36.569Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
