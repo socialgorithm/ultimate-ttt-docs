@@ -99,3 +99,9 @@ find all the sources in the `engine/` directory.
 #### Can't find the project!
 
 After running `git clone` without errors you should have the project in the folder the terminal is in. To find out where this is type `pwd` (or `echo %cd%` on Windows).
+
+#### Warning EPIPE
+
+If you get an error mentioning `EPIPE` when running `uabc` in practice mode, it's because the python program crashed or didn't run.
+
+This is typically caused by `python` or `python3` not being installed, or not being in your PATH. According to the [documentation on the python page](https://docs.python.org/3/using/windows.html), reinstalling Python should fix the issue.
