@@ -40,6 +40,8 @@ In order to run them just use the `uabc` utility in practice mode:
 uabc -p -f "node player.js"
 ```
 
+The JavaScript player uses a library that provides insight into the functions that you can use: [JavaScript Game Engine](https://socialgorithm.org/ultimate-ttt-js/)
+
 > We have prepared [some ideas](ideas.md) on how to write the AI for your player that may help you out!
 
 ## Continue: [Running Locally](analyse_games.md)
