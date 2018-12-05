@@ -12,14 +12,17 @@ git clone https://github.com/socialgorithm/uttt-player-js.git
 
 After this, you'll have a folder named `uttt-player-js`, which contains the player.
 
+```console
+cd uttt-player-js
+```
+
 ## Set up
 
 After you've cloned the repository, cd into the project folder (`cd uttt-player-js`), and run the following command to install the dependencies:
 
-```bash
+```console
 npm install
 ```
-
 
 The `player.js` file does the stdin/stdout work, and you shouldn't edit it. It requires the file `src/defensive/logic.js`, which is the one you could start with.
 
@@ -30,6 +33,12 @@ Inside the `src` folder you'll find three implementations:
 * `random/logic.js` - selects any valid move at random.
 
 It's interesting to look at each of these to see how they implement the logic and learn about it before starting to make changes.
+
+In order to run them just use the `uabc` utility in practice mode:
+
+```console
+uabc -p -f "node player.js"
+```
 
 > We have prepared [some ideas](ideas.md) on how to write the AI for your player that may help you out!
 

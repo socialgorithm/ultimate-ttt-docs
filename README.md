@@ -26,6 +26,14 @@ These are the minimum requirements to participate in the coding competition:
     npm install -g @socialgorithm/uabc
     ```
 
+Test that it works by running:
+
+```console
+uabc --version
+```
+
+And you should see a version number (e.g. 6.0.0)
+
 ## Continue: [Game Rules](sections/uttt/ultimate_tic_tac_toe.md)
 
 -----
@@ -36,3 +44,6 @@ These are the minimum requirements to participate in the coding competition:
 
 If you see an **EACCES** error when you try to install a package globally: See the [npm docs on permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions).
 
+#### Lots of warning messages on Windows
+
+If after running `npm install` you see loads of warning messages in red/yellow, this is typically ok and everything should work.
